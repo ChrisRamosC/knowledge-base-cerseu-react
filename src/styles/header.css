@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.header-section {
+    /* i need a linear background 1C1E53 to 050517 (up to botm)*/
+    background: linear-gradient(180deg, #1C1E53 0%, #050517 100%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2%;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo img {
+    max-height: 60px;
+    /* Ajusta el tamaño de la imagen según tus necesidades */
+}
+
+.header__logo:first-child p {
+    margin-left: 10px;
+    /* Ajusta el margen según tus necesidades */
+}
+
+.header__logo:last-child p {
+    margin-right: 10px;
+    /* Ajusta el margen según tus necesidades */
+}
+
+
+.header__logo p,
+.header__text p {
+    font-size: 20px;
+    color: white;
+    max-width: 300px;
+    /* quiero que el texto esté centrado */
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .header__text p {
+        font-size: 16px; /* Disminuye el tamaño del texto */
+        max-width: 100%; /* Ocupa el ancho completo */
+    }
+}
+
+/* avatar section  */
+.container-fluid {
+    color: white;
+}
+
+.nav-item {
+    margin-inline: 10px;
+}
+
+.avatar {
+    margin-right: 10px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.m-0 {
+    font-size: 14px;
+    
+}
+
+.m-1 {
+    /* alpha */
+    color: gray;
+    font-size: 12px;
+
+}
+
+/* search section */
+.search-section {
+    color: white;
+    padding: 5% 5%;
+    max-width: 60%;
+}
+
+/* media query para hacer que cuando sea menor el ancho de la pantalla ocupe el 100% */
+@media (max-width: 900px) {
+    .search-section {
+        max-width: 100%;
+    }
+}
+
+
+.input-group {
+    height: 60px;
+}
+
+.input-group button {
+    background-color: #3A3AF4;
+    color: white;
+    width: 120px;
+}
+
+.search-details a {
+    /* bold and white */
+    color: white;
+    font-weight: 700;
+    margin-inline: 8px;
+}

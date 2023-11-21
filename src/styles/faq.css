@@ -1,0 +1,244 @@
+.faq-container {
+    margin: 100px 150px;
+    background-color: white;
+    padding: 3%;
+    border-radius: 10px;
+    font-size: 16px;
+    min-width: 400px;
+    max-width: 1300px;
+    /* in center */
+    margin: 100px auto;
+}
+
+.faq-container h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.content-container {
+    display: grid;
+    /* responsive grid */
+    grid-template-columns: minmax(auto-fill, 1fr);
+    gap: 20px;
+}
+
+.faq-img {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    /* rounded corners 10px */
+    border-radius: 10px;
+    margin-right: 50px;
+    /* responsive image */
+    max-width: 100%;
+    height: auto;
+}
+
+#specific-objectives {
+    grid-column: 1 / span 2;
+}
+
+
+@media (width < 1400px) {
+    .faq-img {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #general-objective {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media (width < 1200px) {
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-img {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #specific-objectives {
+        grid-column: 1;
+    }
+}
+
+.evaluation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  in column */
+    flex-direction: column;
+    margin-top: 50px;
+    /* gray */
+    color: #4F4F4F;
+}
+
+.evaluation-buttons {
+    margin: 0 auto;
+}
+
+/* courses */
+
+.courses-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-gap: 36px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    /* Asegura que la imagen se ajuste a los bordes redondeados de la tarjeta */
+}
+
+.course-image {
+    height: 200px;
+    /* Establece un alto fijo para la imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    /* Elimina el padding */
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste correctamente */
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    /* Mueve el padding aquí para mantener el espacio alrededor del texto */
+    /* se ajuste al maximo de la tarjeta */
+    height: 100%;
+}
+
+.course-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.course-stars {
+    align-self: flex-end;
+}
+
+.course-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    /* Empuja course-details hacia abajo */
+}
+
+.course-general {
+    display: flex;
+    /* space between */
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.course-general h3 {
+    margin: 0;
+}
+
+.course-stars {
+    display: flex;
+    align-items: center;
+    background: rgb(61, 15, 146);
+    padding: 4px 8px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.course-stars i {
+    color: rgb(255, 242, 56);
+    margin-right: 4px;
+}
+
+/* login info */
+.login-info {
+    display: grid;
+
+}
+
+.additional-buttons {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin: 50px;
+}
+
+/* payment */
+.payment-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    /* que sigan a la siguiente fila */
+    flex-wrap: wrap;
+    gap: 50px;
+    /* center */
+    align-items: center;
+}
+
+.payment-options img {
+    height: 80px;
+    /* center */
+    margin: 0 auto;
+}
+
+.navigation-image {
+    /* center */
+    margin: 0 auto;
+    width: 100%;
+    padding: 50px 150px;
+}
+
+/* sidebar */
+
+.sidebar-button {
+    width: 100%;
+    padding-inline: 16px;
+    border: none;
+    border-radius: 6px 6px 0 0;
+    background-color: #1C1E53;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    /* Resto de tus estilos */
+    z-index: 9999;
+    /* agregale un alpha */
+    border-radius: 6px;
+    background-color: #5c61dfbb;
+    color: black;
+    font-size: 14px;
+}
+
+.menu-item {
+    font-size: 12px;
+}
+
